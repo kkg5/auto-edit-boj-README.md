@@ -60,7 +60,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.edit()
 
     def edit(self):
-        with open('README.md', 'r') as f:
+        with open('README1.md', 'r') as f:
             lines = f.readlines()
         with open('README2.md', 'w') as f:
             for line in lines:
