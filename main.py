@@ -22,7 +22,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.content = ''
 
     def button_clicked(self):
-        index = self.comboBox.currentIndex() + 18
+        index = self.comboBox.currentIndex() + 1
         driver = webdriver.Chrome(service=Service('./chromedriver'))
         driver.set_window_rect(0, 0, 0, 0)
         driver.get('https://www.acmicpc.net/step')
@@ -80,7 +80,7 @@ driver.set_window_rect(0, 0, 0, 0)
 driver.get('https://www.acmicpc.net/step')
 el = []
 
-for i in range(18, 51):
+for i in range(1, 51):
     el.append(driver.find_element(By.CSS_SELECTOR, f'body > div.wrapper > div.container.content > div:nth-child(5) > div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
 driver.close()
 
