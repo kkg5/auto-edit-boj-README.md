@@ -54,7 +54,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.link += '\n'
 
         for a in range(len(self.num)):
-            self.text += f'| <img src="{self.difficulty[a]}" width="20px" height="25px"></img> | [{self.num[a]}][{self.num[a]}] | {self.name[a]} |  |  |\n '
+            self.text += f'| <img src="{self.difficulty[a]}" width="20px" height="25px"></img> | [{self.num[a]}][{self.num[a]}] | {self.name[a]} |  |  |\n'
             self.link += f'[{self.num[a]}]: https://www.acmicpc.net/problem/{self.num[a]}\n'
         self.content += f'| [{self.comboBox.currentText()}](#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
         self.edit()
