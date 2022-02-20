@@ -37,8 +37,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.progressBar.setValue(0)
 
         index = self.comboBox.currentIndex() + 18
-        driver = webdriver.Chrome(service=Service('./chromedriver'))
-        driver.set_window_rect(0, 0, 0, 0)
         driver.get('https://www.acmicpc.net/step')
         driver.find_element(By.CSS_SELECTOR, 'body > div.wrapper > div.container.content > div:nth-child(5) > div > '
                                              f'div > table > tbody > tr:nth-child({index}) > td:nth-child(2) > a').click()
@@ -106,7 +104,6 @@ el = []
 for i in range(18, 51):
     el.append(driver.find_element(By.CSS_SELECTOR,
                                   f'body > div.wrapper > div.container.content > div:nth-child(5) > div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
-driver.close()
 
 app = QApplication()
 window = MainWindow()
