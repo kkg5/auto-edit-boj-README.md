@@ -11,3 +11,7 @@ README.md 파일 내용을 자동으로 추가해주는 프로그램
 ---
 
 README1.md -> README2.md
+
+---
+
+2022-02-22 위치 변경, progressBar 추가
