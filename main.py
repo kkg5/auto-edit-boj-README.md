@@ -1,4 +1,3 @@
-from PySide6.QtCore import QCoreApplication
 from PySide6.QtWidgets import QApplication, QMainWindow
 from bs4 import BeautifulSoup
 
@@ -36,7 +35,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.progressBar.setVisible(True)
         self.progressBar.setValue(0)
 
-        index = self.comboBox.currentIndex() + 18
+        index = self.comboBox.currentIndex() + 1
         driver.get('https://www.acmicpc.net/step')
         driver.find_element(By.CSS_SELECTOR, 'body > div.wrapper > div.container.content > div:nth-child(5) > div > '
                                              f'div > table > tbody > tr:nth-child({index}) > td:nth-child(2) > a').click()
@@ -101,7 +100,7 @@ driver.get('https://www.acmicpc.net/step')
 
 el = []
 
-for i in range(18, 51):
+for i in range(1, 51):
     el.append(driver.find_element(By.CSS_SELECTOR,
                                   f'body > div.wrapper > div.container.content > div:nth-child(5) > div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
 
