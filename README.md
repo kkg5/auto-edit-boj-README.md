@@ -1,5 +1,7 @@
 ## auto-edit-boj-README.md
 
+![preview](https://i.imgur.com/iqmtoCt.png)
+
 파이썬 selenium과 BeautifulSoup를 사용
 
 [백준-단계별로 풀어보기](https://www.acmicpc.net/step)에서 "문제 번호와 이름"을 크롤링,
