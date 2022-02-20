@@ -1,4 +1,4 @@
-# auto-edit-boj-README.md
+## auto-edit-boj-README.md
 
 파이썬 selenium과 BeautifulSoup를 사용
 
@@ -8,11 +8,7 @@
 
 README.md 파일 내용을 자동으로 추가해주는 프로그램
 
----
-
-README1.md -> README2.md
-
----
+( README1.md -> README2.md )
 
 ## Release Note
 
