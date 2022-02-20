@@ -1,6 +1,6 @@
 ## auto-edit-boj-README.md
 
-![preview](https://i.imgur.com/iqmtoCt.png)
+![preview](./preview.png)
 
 파이썬 selenium, BeautifulSoup, PySide6 사용
 
