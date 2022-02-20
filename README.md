@@ -14,4 +14,7 @@ README1.md -> README2.md
 
 ---
 
-2022-02-22 위치 변경, progressBar 추가
+## Release Note
+
+* 2022-02-21
+  * 위치 변경, progressBar 추가
