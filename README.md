@@ -10,6 +10,12 @@
 4. [solved.ac](https://solved.ac/)에서 문제들의 "난이도"를 크롤링
 5. README1.md 파일에 내용을 추가해 README2.md 파일로 저장
 
+## Chrome Driver
+
+https://sites.google.com/chromium.org/drive
+
+selenium을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요하다
+
 ## Release Note
 
 * 2022-02-16
