@@ -1,3 +1,4 @@
+from PySide6.QtCore import QCoreApplication
 from PySide6.QtWidgets import QApplication, QMainWindow
 from bs4 import BeautifulSoup
 
@@ -10,19 +11,32 @@ from selenium import webdriver
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
+        self.setupUi(self)
+
         self.name = []
         self.num = []
         self.difficulty = []
-        self.setupUi(self)
-        for v in el:
-            self.comboBox.addItem(v)
-        self.pushButton.clicked.connect(self.button_clicked)
+
         self.text = ''
         self.link = ''
         self.content = ''
 
+        self.progressBar.setVisible(False)
+
+        self.setGeometry(800, 300, 300, 179)
+
+        for v in el:
+            self.comboBox.addItem(v)
+
+        self.pushButton.clicked.connect(self.button_clicked)
+
     def button_clicked(self):
-        index = self.comboBox.currentIndex() + 1
+
+        self.label_2.setText('editing..')
+        self.progressBar.setVisible(True)
+        self.progressBar.setValue(0)
+
+        index = self.comboBox.currentIndex() + 18
         driver = webdriver.Chrome(service=Service('./chromedriver'))
         driver.set_window_rect(0, 0, 0, 0)
         driver.get('https://www.acmicpc.net/step')
@@ -36,6 +50,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         for v in soup.select('.list_problem_id'):
             self.num.append(v.getText())
 
+        progress_value = 100 / len(self.num)
+        cur_value = 0
+
         for n in self.num:
             driver.get(f'https://solved.ac/search?query={n}')
             req = driver.page_source
@@ -48,6 +65,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                             'div.StickyTable__Wrapper-sc-45ty5n-3.cerLvn.sticky-table > div > div:nth-child(2) > '
                             'div:nth-child(2) > span > a > span')
             self.name.append(v[0].getText())
+            cur_value += progress_value
+            self.progressBar.setValue(cur_value)
 
         self.text += '\n---\n\n### ' + self.comboBox.currentText() + '\n\n| 난이도 | 번호 | 이름 | 날짜 | 체크 ' \
                                                                   '|\n|:---:|:---:|:---:|:---:| :---: |\n '
@@ -74,14 +93,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     f.write(line)
             f.write(self.link)
 
+        self.label_2.setText('success!')
+        self.progressBar.setValue(100)
+
 
 driver = webdriver.Chrome(service=Service('./chromedriver'))
 driver.set_window_rect(0, 0, 0, 0)
 driver.get('https://www.acmicpc.net/step')
+
 el = []
 
-for i in range(1, 51):
-    el.append(driver.find_element(By.CSS_SELECTOR, f'body > div.wrapper > div.container.content > div:nth-child(5) > div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
+for i in range(18, 51):
+    el.append(driver.find_element(By.CSS_SELECTOR,
+                                  f'body > div.wrapper > div.container.content > div:nth-child(5) > div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
 driver.close()
 
 app = QApplication()
