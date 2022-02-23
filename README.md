@@ -2,7 +2,7 @@
 
 ![preview](./preview.png)
 
-파이썬 selenium, BeautifulSoup, PySide6 사용
+파이썬 selenium, BeautifulSoup4, PySide6 사용
 
 1. [백준-단계별로 풀어보기](https://www.acmicpc.net/step)에서 "목차"를 크롤링해 comboBox에 저장
 2. comboBox에 저장된 목차 중 하나를 선택해 Edit 버튼을 클릭
