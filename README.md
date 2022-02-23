@@ -14,7 +14,7 @@
 
 https://sites.google.com/chromium.org/driver
 
-selenium을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요하다
+selenium을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요함
 
 ## Release Note
 
