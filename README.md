@@ -26,6 +26,11 @@
   - `README1.md` 파일에 있는 문제들의 `난이도` 파싱
   - [`solved.ac`](https://solved.ac)에서 문제들 `난이도` 크롤링
   - 둘을 비교해 `난이도`가 다른 문제들 출력
+  - 
+# Should be added
+
+* 예외 처리
+* 코드 정리
 
 # Chrome Driver
 
