@@ -2,6 +2,8 @@
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white"/> <img src="https://img.shields.io/badge/PySide6-41CD52?style=flat-square&logo=qt&logoColor=white"/> <img src="https://img.shields.io/badge/BeautifulSoup4-41454A?style=flat-square&logoColor=white"/>
 
+* `BOJ/README.md` 파일을 버튼 한 번에 수정해주는 프로그램
+
 * Edit 버튼
   - [백준-단계별로 풀어보기](https://www.acmicpc.net/step)에서 `목차` 크롤링 comboBox에 저장
   - comboBox에 저장된 목차 중 하나를 선택해 `Edit` 버튼 클릭
@@ -17,16 +19,16 @@
 
 # Chrome Driver
 
-`Selenium`을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요함
+- `Selenium`을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요함
 
-[다운로드 링크](https://sites.google.com/chromium.org/driver) 
+- [다운로드 링크](https://sites.google.com/chromium.org/driver) 
 
 # Preview
 
+![preview](./preview.png)
 ![preview3](./preview3.png)
 
 ![preview4](./preview4.png)
-
 ![preview2](./preview2.png)
 
 # Release Note
