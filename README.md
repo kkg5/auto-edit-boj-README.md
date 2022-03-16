@@ -1,13 +1,6 @@
-## auto-edit-boj-README.md
+# auto-edit-boj-README.md
 
-
-![preview3](./preview3.png)
-
-![preview4](./preview4.png)
-
-![preview2](./preview2.png)
-
-파이썬 selenium, BeautifulSoup4, PySide6 사용
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white"/> <img src="https://img.shields.io/badge/PySide6-41CD52?style=flat-square&logo=qt&logoColor=white"/> <img src="https://img.shields.io/badge/BeautifulSoup4-41454A?style=flat-square&logoColor=white"/>
 
 * Edit 버튼
   - [백준-단계별로 풀어보기](https://www.acmicpc.net/step)에서 `목차` 크롤링 comboBox에 저장
@@ -20,15 +13,23 @@
   - `Examine` 버튼 클릭
   - `README1.md` 파일에 있는 문제들의 `난이도` 파싱
   - [solved.ac](https://solved.ac)에서 문제들 `난이도` 크롤링
-  - 둘을 비교해 다르면 위 사진과 같이 출력
+  - 둘을 비교해 `난이도`가 다른 문제들 출력
 
-## Chrome Driver
+# Chrome Driver
 
 selenium을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요함
 
 [다운로드 링크](https://sites.google.com/chromium.org/driver) 
 
-## Release Note
+# Preview
+
+![preview3](./preview3.png)
+
+![preview4](./preview4.png)
+
+![preview2](./preview2.png)
+
+# Release Note
 
 * 2022-02-16
   * 기본 기능
