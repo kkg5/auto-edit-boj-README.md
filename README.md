@@ -17,7 +17,7 @@
 
 # Chrome Driver
 
-selenium을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요함
+`Selenium`을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 필요함
 
 [다운로드 링크](https://sites.google.com/chromium.org/driver) 
 
@@ -36,7 +36,7 @@ selenium을 사용하기 위해 크롬 버전에 맞는 크롬 드라이버가 �
 
 * 2022-02-21
   * progressBar 추가
-  * 창 위치 변경
+  * 창 기본 위치 변경
 
 * 2022-03-16
   * Examine 버튼 추가
