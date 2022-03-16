@@ -1,5 +1,10 @@
 ## auto-edit-boj-README.md
 
+
+![preview3](./preview3.png)
+
+![preview4](./preview4.png)
+
 ![preview2](./preview2.png)
 
 파이썬 selenium, BeautifulSoup4, PySide6 사용
