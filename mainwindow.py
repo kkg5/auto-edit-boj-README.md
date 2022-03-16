@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainwindowvkoHZK.ui'
+## Form generated from reading UI file 'mainwindow2JrFUUd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.3
 ##
@@ -40,13 +40,18 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(0, QFormLayout.FieldRole, self.comboBox)
 
+        self.pushButton_2 = QPushButton(self.centralwidget)
+        self.pushButton_2.setObjectName(u"pushButton_2")
 
-        self.verticalLayout_2.addLayout(self.formLayout)
+        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.pushButton_2)
 
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
 
-        self.verticalLayout_2.addWidget(self.pushButton)
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.pushButton)
+
+
+        self.verticalLayout_2.addLayout(self.formLayout)
 
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
@@ -77,6 +82,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"auto_edit_boj_READMEmd", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Contents", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Examine", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Edit", None))
         self.label_2.setText("")
     # retranslateUi
