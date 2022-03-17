@@ -140,9 +140,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if not li:
             self.label_2.setText('Success! No wrong difficulty.')
         else:
-            self.label_2.setText('Success!\n'
-                                 'Problem:\n\t'
-                                 ',\n\t'.join(li))
+            self.label_2.setText('Success!\nProblem:\n\t' + ',\n\t'.join(li))
 
         self.progressBar.setValue(100)
 
