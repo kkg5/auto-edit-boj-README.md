@@ -81,7 +81,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                                                                      '|\n|:---:|:---:|:---:|:---:| :---: |\n '
         self.link += '\n'
 
-        print(self.difficulty)
         for a in range(len(self.num)):
             self.text += f'| <img src="{self.difficulty[a]}" width="20px" height="25px"></img> ' \
                          f'| [{self.num[a]}][{self.num[a]}] | {self.name[a]} |  |  |\n'
