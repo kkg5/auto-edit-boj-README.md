@@ -63,7 +63,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             webpage = requests.get(f'https://solved.ac/search?query={n}')
             soup = BeautifulSoup(webpage.content, 'html.parser')
 
-            self.difficulty.append(re.search('[0-9]+', soup.img.__getitem__(key='src')).group())
+            self.difficulty.append(soup.img.__getitem__(key='src'))
 
             v = soup.select('div:nth-child(2) > div:nth-child(2) > span > a > span')
 
@@ -140,7 +140,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if not li:
             self.label_2.setText('Success! No wrong difficulty.')
         else:
-            self.label_2.setText('Success!\nProblem:\n\t' + ',\n\t'.join(li))
+            self.label_2.setText('Success!\n'
+                                 'Problem:\n\t'
+                                 ',\n\t'.join(li))
 
         self.progressBar.setValue(100)
 
@@ -151,7 +153,7 @@ driver.get('https://www.acmicpc.net/step')
 
 el = []
 
-START_INDEX = 1
+START_INDEX = 25
 
 for i in range(START_INDEX, 51):
     el.append(driver.find_element(By.CSS_SELECTOR,
