@@ -227,7 +227,7 @@
 | <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [7569][7569] | 토마토 | 03/08 | ✔ |
 | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [1697][1697] | 숨바꼭질 | 03/09 | ✔ |
 | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [2206][2206] | 벽 부수고 이동하기 | 03/10 | ✔ |
-| <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [7562][7562] | 나이트의 이동 | 03/11 | ✔ |
+| <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [7562][7562] | 나이트의 이동 | 03/11 | ✔ |
 | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1707][1707] | 이분 그래프 | 03/12 | ✔ |
 
 ---
