@@ -65,7 +65,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             self.difficulty.append(soup.img.__getitem__(key='src'))
 
-            v = soup.select('div:nth-child(2) > div:nth-child(2) > span > a > span')
+            v = soup.select('div.ProblemTitleTag__ProblemTitle-sc-iphdox-1.kihrnS > a > span')
 
             self.name.append(v[0].getText())
 
@@ -90,9 +90,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                         f'(#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
 
     def write(self):
-        with open('README1.md', 'r') as f:
+        with open('README1.md', 'r', encoding="UTF-8") as f:
             lines = f.readlines()
-        with open('README2.md', 'w') as f:
+        with open('README2.md', 'w', encoding="UTF-8") as f:
             for line in lines:
                 if line.rstrip() == '<!-- Contents -->':
                     f.write(self.content)
@@ -108,7 +108,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.progressBar.setValue(100)
 
     def examine(self):
-        with open('README1.md', 'r') as f:
+        with open('README1.md', 'r', encoding="UTF-8") as f:
             lines = f.readlines()
 
         li = []
