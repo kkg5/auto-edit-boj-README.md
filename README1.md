@@ -4,8 +4,12 @@
 
 [![Solved.ac
 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=kkg0510)](https://solved.ac/profile/kkg0510)
+ 
+[![mazandi profile](http://mazandi.herokuapp.com/api?handle=kkg0510&theme=warm)](https://solved.ac/profile/kkg0510)
 
 ---
+
+## [백준 / 단계별로 풀어보기](https://www.acmicpc.net/step)
 
 |        Contents         |
 |:-----------------------:|
@@ -17,6 +21,14 @@
 | [정수론 및 조합론](#정수론-및-조합론) |
 |        [스택](#스택)        |
 |      [큐, 덱](#큐-덱)       |
+| [분할 정복](#분할-정복) |
+| [이분 탐색](#이분-탐색) |
+| [우선순위 큐](#우선순위-큐) |
+| [동적 계획법 2](#동적-계획법-2) |
+| [DFS와 BFS](#DFS와-BFS) |
+| [최단 경로](#최단-경로) |
+| [투 포인터](#투-포인터) |
+| [동적 계획법과 최단거리 역추적](#동적-계획법과-최단거리-역추적) |
 <!-- Contents -->
 
 ---
@@ -40,7 +52,7 @@
 | <img src="https://static.solved.ac/tier_small/5.svg" width="20px" height="25px"></img> | [2750][2750] | 수 정렬하기 | 01/29 | ✔ |
 | <img src="https://static.solved.ac/tier_small/6.svg" width="20px" height="25px"></img> | [2751][2751] | 수 정렬하기 2 | 01/29 | ✔ |
 | <img src="https://static.solved.ac/tier_small/6.svg" width="20px" height="25px"></img> | [10989][10989] | 수 정렬하기 3 | 01/29 | ✔ |
-| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [2108][2108] | 통계학 | 01/29 | ✔ |
+| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [2108][2108] | 통계학 | 01/29 | ✔ |
 | <img src="https://static.solved.ac/tier_small/6.svg" width="20px" height="25px"></img> | [1427][1427] | 소트인사이드 | 01/30 | ✔ |
 | <img src="https://static.solved.ac/tier_small/6.svg" width="20px" height="25px"></img> | [11650][11650] | 좌표 정렬하기 | 01/30 | ✔ |
 | <img src="https://static.solved.ac/tier_small/6.svg" width="20px" height="25px"></img> | [11651][11651] | 좌표 정렬하기 2 | 01/30 | ✔ |
@@ -92,7 +104,7 @@
 
 | 난이도 | 번호 | 이름 | 날짜 | 체크 |
 |:---:|:---:|:---:|:---:| :---: |
-| <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [11047][11047] | 동전 0 | 02/11 | ✔ |
+| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [11047][11047] | 동전 0 | 02/11 | ✔ |
 | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [1931][1931] | 회의실 배정 | 02/12 | ✔ |
 | <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [11399][11399] | ATM | 02/12 | ✔ |
 | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [1541][1541] | 잃어버린 괄호 | 02/12 | ✔ |
@@ -136,13 +148,128 @@
 
 | 난이도 | 번호 | 이름 | 날짜 | 체크 |
 |:---:|:---:|:---:|:---:| :---: |
-| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [18258][18258] | 큐 2 |  |  |
-| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [2164][2164] | 카드2 |  |  |
-| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [11866][11866] | 요세푸스 문제 0 |  |  |
-| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [1966][1966] | 프린터 큐 |  |  |
-| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [10866][10866] | 덱 |  |  |
-| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [1021][1021] | 회전하는 큐 |  |  |
-| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [5430][5430] | AC |  |  |
+| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [18258][18258] | 큐 2 | 02/16 | ✔ |
+| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [2164][2164] | 카드2 | 02/16 | ✔ |
+| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [11866][11866] | 요세푸스 문제 0 | 02/16 | ✔ |
+| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [1966][1966] | 프린터 큐 | 02/16 | ✔ |
+| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [10866][10866] | 덱 | 02/16 | ✔ |
+| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [1021][1021] | 회전하는 큐 | 02/17 | ✔ |
+| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [5430][5430] | AC | 02/18 | ✔ |
+
+---
+
+### 분할 정복
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [2630][2630] | 색종이 만들기 | 02/18 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [1992][1992] | 쿼드트리 | 02/18 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [1780][1780] | 종이의 개수 | 02/18 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [1629][1629] | 곱셈 | 02/18 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [11401][11401] | 이항 계수 3 | 02/19 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/5.svg" width="20px" height="25px"></img> | [2740][2740] | 행렬 곱셈 | 02/19 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [10830][10830] | 행렬 제곱 | 02/19 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [11444][11444] | 피보나치 수 6 | 02/19 | ✔ |
+ | <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [6549][6549] | 히스토그램에서 가장 큰 직사각형 | 02/20 | ✔ |
+
+---
+
+### 이분 탐색
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [1920][1920] | 수 찾기 | 02/20 | ✔ |
+| <img src="https://static.solved.ac/tier_small/7.svg" width="20px" height="25px"></img> | [10816][10816] | 숫자 카드 2 | 02/20 | ✔ |
+| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [1654][1654] | 랜선 자르기 | 02/20 | ✔ |
+| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [2805][2805] | 나무 자르기 | 02/21 | ✔ |
+| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [2110][2110] | 공유기 설치 | 02/21 | ✔ |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [1300][1300] | K번째 수 | 02/22 | ✔ |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [12015][12015] | 가장 긴 증가하는 부분 수열 2 | 02/23 | ✔ |
+
+---
+
+### 우선순위 큐
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [11279][11279] | 최대 힙 | 02/23 | ✔ |
+| <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [1927][1927] | 최소 힙 | 02/23 | ✔ |
+| <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [11286][11286] | 절댓값 힙 | 02/24 | ✔ |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [1655][1655] | 가운데를 말해요 | 02/24 | ✔ |
+
+---
+
+### 동적 계획법 2
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [11066][11066] | 파일 합치기 | 02/24 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [11049][11049] | 행렬 곱셈 순서 | 02/25 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1520][1520] | 내리막 길 | 02/25 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [10942][10942] | 팰린드롬? | 02/26 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [2629][2629] | 양팔저울 | 02/27 | ✔ |
+| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [2293][2293] | 동전 1 | 02/28 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [7579][7579] | 앱 | 03/01 | ✔ |
+
+---
+
+### DFS와 BFS
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [1260][1260] | DFS와 BFS | 03/02 | ✔ |
+| <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [2606][2606] | 바이러스 | 03/03 | ✔ |
+| <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [2667][2667] | 단지번호붙이기 | 03/04 | ✔ |
+| <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [1012][1012] | 유기농 배추 | 03/05 | ✔ |
+| <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [2178][2178] | 미로 탐색 | 03/06 | ✔ |
+| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [7576][7576] | 토마토 | 03/07 | ✔ |
+| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [7569][7569] | 토마토 | 03/08 | ✔ |
+| <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [1697][1697] | 숨바꼭질 | 03/09 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [2206][2206] | 벽 부수고 이동하기 | 03/10 | ✔ |
+| <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [7562][7562] | 나이트의 이동 | 03/11 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1707][1707] | 이분 그래프 | 03/12 | ✔ |
+
+---
+
+### 최단 경로
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [1753][1753] | 최단경로 | 03/13 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1504][1504] | 특정한 최단 경로 | 03/14 | ✔ |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [9370][9370] | 미확인 도착지 | 03/15 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [11657][11657] | 타임머신 | 03/16 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [11404][11404] | 플로이드 | 03/17 | ✔ |
+| <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [10217][10217] | KCM Travel | 03/18 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1956][1956] | 운동 | 03/19 | ✔ |
+
+---
+
+### 투 포인터
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [3273][3273] | 두 수의 합 | 03/20 | ✔ |
+| <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [2470][2470] | 두 용액 | 03/21 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1806][1806] | 부분합 | 03/22 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [1644][1644] | 소수의 연속합 | 03/23 | ✔ |
+| <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [1450][1450] | 냅색문제 | 03/24 | ✔ |
+
+---
+
+### 동적 계획법과 최단거리 역추적
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [12852][12852] | 1로 만들기 2 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [14002][14002] | 가장 긴 증가하는 부분 수열 4 |  |  |
+| <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [14003][14003] | 가장 긴 증가하는 부분 수열 5 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9252][9252] | LCS 2 |  |  |
+| <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [2618][2618] | 경찰차 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [13913][13913] | 숨바꼭질 4 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9019][9019] | DSLR |  |  |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [11779][11779] | 최소비용 구하기 2 |  |  |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [11780][11780] | 플로이드 2 |  |  |
 <!-- ### -->
 
 </div>
@@ -223,3 +350,70 @@
 [10866]: https://www.acmicpc.net/problem/10866
 [1021]: https://www.acmicpc.net/problem/1021
 [5430]: https://www.acmicpc.net/problem/5430
+
+[2630]: https://www.acmicpc.net/problem/2630
+[1992]: https://www.acmicpc.net/problem/1992
+[1780]: https://www.acmicpc.net/problem/1780
+[1629]: https://www.acmicpc.net/problem/1629
+[11401]: https://www.acmicpc.net/problem/11401
+[2740]: https://www.acmicpc.net/problem/2740
+[10830]: https://www.acmicpc.net/problem/10830
+[11444]: https://www.acmicpc.net/problem/11444
+[6549]: https://www.acmicpc.net/problem/6549
+
+[1920]: https://www.acmicpc.net/problem/1920
+[10816]: https://www.acmicpc.net/problem/10816
+[1654]: https://www.acmicpc.net/problem/1654
+[2805]: https://www.acmicpc.net/problem/2805
+[2110]: https://www.acmicpc.net/problem/2110
+[1300]: https://www.acmicpc.net/problem/1300
+[12015]: https://www.acmicpc.net/problem/12015
+
+[11279]: https://www.acmicpc.net/problem/11279
+[1927]: https://www.acmicpc.net/problem/1927
+[11286]: https://www.acmicpc.net/problem/11286
+[1655]: https://www.acmicpc.net/problem/1655
+
+[11066]: https://www.acmicpc.net/problem/11066
+[11049]: https://www.acmicpc.net/problem/11049
+[1520]: https://www.acmicpc.net/problem/1520
+[10942]: https://www.acmicpc.net/problem/10942
+[2629]: https://www.acmicpc.net/problem/2629
+[2293]: https://www.acmicpc.net/problem/2293
+[7579]: https://www.acmicpc.net/problem/7579
+
+[1260]: https://www.acmicpc.net/problem/1260
+[2606]: https://www.acmicpc.net/problem/2606
+[2667]: https://www.acmicpc.net/problem/2667
+[1012]: https://www.acmicpc.net/problem/1012
+[2178]: https://www.acmicpc.net/problem/2178
+[7576]: https://www.acmicpc.net/problem/7576
+[7569]: https://www.acmicpc.net/problem/7569
+[1697]: https://www.acmicpc.net/problem/1697
+[2206]: https://www.acmicpc.net/problem/2206
+[7562]: https://www.acmicpc.net/problem/7562
+[1707]: https://www.acmicpc.net/problem/1707
+
+[1753]: https://www.acmicpc.net/problem/1753
+[1504]: https://www.acmicpc.net/problem/1504
+[9370]: https://www.acmicpc.net/problem/9370
+[11657]: https://www.acmicpc.net/problem/11657
+[11404]: https://www.acmicpc.net/problem/11404
+[10217]: https://www.acmicpc.net/problem/10217
+[1956]: https://www.acmicpc.net/problem/1956
+
+[3273]: https://www.acmicpc.net/problem/3273
+[2470]: https://www.acmicpc.net/problem/2470
+[1806]: https://www.acmicpc.net/problem/1806
+[1644]: https://www.acmicpc.net/problem/1644
+[1450]: https://www.acmicpc.net/problem/1450
+
+[12852]: https://www.acmicpc.net/problem/12852
+[14002]: https://www.acmicpc.net/problem/14002
+[14003]: https://www.acmicpc.net/problem/14003
+[9252]: https://www.acmicpc.net/problem/9252
+[2618]: https://www.acmicpc.net/problem/2618
+[13913]: https://www.acmicpc.net/problem/13913
+[9019]: https://www.acmicpc.net/problem/9019
+[11779]: https://www.acmicpc.net/problem/11779
+[11780]: https://www.acmicpc.net/problem/11780
