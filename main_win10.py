@@ -108,41 +108,55 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.progressBar.setValue(100)
 
     def examine(self):
-        with open('README1.md', 'r', encoding="UTF-8") as f:
+        with open('README1.md', 'r') as f:
             lines = f.readlines()
-
-        li = []
 
         self.label_2.setText('examining..')
         self.progressBar.setVisible(True)
         self.progressBar.setValue(0)
 
-        progress_value = 100 / len(lines)
-        cur_value = 0
+        num = []
+        name = {}
+        dif = {}
 
         for line in lines:
             if line.rstrip()[:48] == '| <img src="https://static.solved.ac/tier_small/':
                 nums = re.findall('[0-9]+', line)
-                num = nums[3]
-                dif = nums[0]
+                num.append(nums[3])
+                dif[nums[3]] = nums[0]
+                name[nums[3]] = line.split(' | ')[-3]
 
-                webpage = requests.get(f'https://solved.ac/search?query={num}')
-                soup = BeautifulSoup(webpage.content, 'html.parser')
+        num.sort(key=lambda x: int(x))
 
-                difficulty = re.search('[0-9]+', soup.img.__getitem__(key='src')).group()
+        progress_value = 100 / len(num)
+        cur_value = 0
 
-                if dif != difficulty:
-                    li.append('(' + num + ') ' + line.split(' | ')[-3])
+        dif2 = []
+        for idx in range((len(num) - 1) // 50 + 1):
+            webpage = requests.get(f'https://solved.ac/search?query=id:{"|".join(num[0 + 50 * idx:50 + 50 * idx])}')
+            soup = BeautifulSoup(webpage.content, 'html.parser')
 
-            cur_value += progress_value
-            self.progressBar.setValue(int(cur_value))
+            for idx2 in range(2, 52):
+                soup_li = soup.select('div.contents > div:nth-child(4) > div:nth-child(2) > div > '
+                                      'div.StickyTable__Wrapper-sc-45ty5n-3.cerLvn.sticky-table > div > '
+                                      f'div:nth-child({idx2}) > div:nth-child(1) > div > div > div > a > a > img')
+                if not soup_li:
+                    break
+                dif2.append(re.findall('[0-9]+', soup_li[0].__getitem__(key='src'))[0])
+                cur_value += progress_value
+                self.progressBar.setValue(cur_value)
 
-        if not li:
+        wrong_li = []
+        for idx in range(len(num)):
+            if dif[num[idx]] != dif2[idx]:
+                wrong_li.append('(' + num[idx] + ') ' + name[num[idx]])
+
+        if not wrong_li:
             self.label_2.setText('Success! No wrong difficulty.')
         else:
             self.label_2.setText('Success!\n' +
                                  'Problem:\n\t' +
-                                 ',\n\t'.join(li))
+                                 ',\n\t'.join(wrong_li))
 
         self.progressBar.setValue(100)
 
@@ -153,7 +167,7 @@ driver.get('https://www.acmicpc.net/step')
 
 el = []
 
-START_INDEX = 25
+START_INDEX = 1
 
 for i in range(START_INDEX, 51):
     el.append(driver.find_element(By.CSS_SELECTOR,
