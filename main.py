@@ -65,7 +65,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             self.difficulty.append(soup.img.__getitem__(key='src'))
 
-            v = soup.select('div:nth-child(2) > div:nth-child(2) > span > a > span')
+            v = soup.select('div.ProblemTitleTag__ProblemTitle-sc-iphdox-1.kihrnS > a > span')
 
             self.name.append(v[0].getText())
 
