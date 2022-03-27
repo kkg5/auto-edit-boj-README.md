@@ -16,6 +16,7 @@ def build_str(self):
     self.content += f'| [{self.comboBox.currentText()}]' \
                     f'(#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
 
+
 def write(self):
     with open('README1.md', 'r') as f:
         lines = f.readlines()
@@ -33,6 +34,7 @@ def write(self):
 
     self.label_2.setText('Success!')
     self.progressBar.setValue(100)
+
 
 def examine(self):
     with open('README1.md', 'r') as f:
