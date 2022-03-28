@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
+import function
 from mainwindow import Ui_MainWindow
 
 
@@ -87,7 +88,7 @@ el = []
 
 START_INDEX = 1
 
-for i in range(START_INDEX, 51):
+for i in range(START_INDEX, 50):
     el.append(driver.find_element(By.CSS_SELECTOR,
                                   f'body > div.wrapper > div.container.content > div:nth-child(5) > '
                                   f'div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
