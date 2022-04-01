@@ -9,7 +9,7 @@
 
 ---
 
-## [백준 / 단계별로 풀어보기](https://www.acmicpc.net/step)
+## 백준 / [단계별로 풀어보기](https://www.acmicpc.net/step) / 2022
 
 |        Contents         |
 |:-----------------------:|
@@ -30,6 +30,8 @@
 | [투 포인터](#투-포인터) |
 | [동적 계획법과 최단거리 역추적](#동적-계획법과-최단거리-역추적) |
 | [트리](#트리) |
+| [유니온 파인드](#유니온-파인드) |
+| [최소 신장 트리](#최소-신장-트리) |
 <!-- Contents -->
 
 ---
@@ -262,14 +264,14 @@
 
 | 난이도 | 번호 | 이름 | 날짜 | 체크 |
 |:---:|:---:|:---:|:---:| :---: |
- | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [12852][12852] | 1로 만들기 2 |  |  |
-| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [14002][14002] | 가장 긴 증가하는 부분 수열 4 |  |  |
-| <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [14003][14003] | 가장 긴 증가하는 부분 수열 5 |  |  |
-| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9252][9252] | LCS 2 |  |  |
-| <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [2618][2618] | 경찰차 |  |  |
-| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [13913][13913] | 숨바꼭질 4 |  |  |
-| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9019][9019] | DSLR |  |  |
-| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [11779][11779] | 최소비용 구하기 2 |  |  |
+ | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [12852][12852] | 1로 만들기 2 | 03/25 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [14002][14002] | 가장 긴 증가하는 부분 수열 4 | 03/26 | ✔ |
+| <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [14003][14003] | 가장 긴 증가하는 부분 수열 5 | 03/27 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9252][9252] | LCS 2 | 03/28 | ✔ |
+| <img src="https://static.solved.ac/tier_small/16.svg" width="20px" height="25px"></img> | [2618][2618] | 경찰차 | 03/29 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [13913][13913] | 숨바꼭질 4 | 03/30 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9019][9019] | DSLR | 03/31 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [11779][11779] | 최소비용 구하기 2 | 04/01 | ✔ |
 | <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [11780][11780] | 플로이드 2 |  |  |
 
 ---
@@ -285,6 +287,30 @@
 | <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [2263][2263] | 트리의 순회 |  |  |
 | <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [5639][5639] | 이진 검색 트리 |  |  |
 | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [4803][4803] | 트리 |  |  |
+
+---
+
+### 유니온 파인드
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1717][1717] | 집합의 표현 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1976][1976] | 여행 가자 |  |  |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [4195][4195] | 친구 네트워크 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [20040][20040] | 사이클 게임 |  |  |
+
+---
+
+### 최소 신장 트리
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/8.svg" width="20px" height="25px"></img> | [9372][9372] | 상근이의 여행 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1197][1197] | 최소 스패닝 트리 |  |  |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [4386][4386] | 별자리 만들기 |  |  |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [1774][1774] | 우주신과의 교감 |  |  |
+| <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [2887][2887] | 행성 터널 |  |  |
+| <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [17472][17472] | 다리 만들기 2 |  |  |
 <!-- ### -->
 
 </div>
@@ -440,3 +466,15 @@
 [2263]: https://www.acmicpc.net/problem/2263
 [5639]: https://www.acmicpc.net/problem/5639
 [4803]: https://www.acmicpc.net/problem/4803
+
+[1717]: https://www.acmicpc.net/problem/1717
+[1976]: https://www.acmicpc.net/problem/1976
+[4195]: https://www.acmicpc.net/problem/4195
+[20040]: https://www.acmicpc.net/problem/20040
+
+[9372]: https://www.acmicpc.net/problem/9372
+[1197]: https://www.acmicpc.net/problem/1197
+[4386]: https://www.acmicpc.net/problem/4386
+[1774]: https://www.acmicpc.net/problem/1774
+[2887]: https://www.acmicpc.net/problem/2887
+[17472]: https://www.acmicpc.net/problem/17472
