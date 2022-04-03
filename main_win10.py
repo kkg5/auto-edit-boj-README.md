@@ -1,3 +1,4 @@
+import asyncio
 import re
 import requests
 from PySide6.QtWidgets import QApplication, QMainWindow
@@ -73,11 +74,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             cur_value += progress_value
             self.progressBar.setValue(cur_value)
 
-        function.build_str(self)
-        function.write(self)
+        asyncio.run(function.build_str(self))
+        asyncio.run(function.write(self))
 
     def examine(self):
-        function.examine(self)
+        asyncio.run(function.examine(self))
 
 
 driver = webdriver.Chrome(service=Service('./chromedriver.exe'))
