@@ -32,6 +32,7 @@
 | [트리](#트리) |
 | [유니온 파인드](#유니온-파인드) |
 | [최소 신장 트리](#최소-신장-트리) |
+| [트리에서의 동적 계획법](#트리에서의-동적-계획법) |
 <!-- Contents -->
 
 ---
@@ -272,7 +273,7 @@
 | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [13913][13913] | 숨바꼭질 4 | 03/30 | ✔ |
 | <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [9019][9019] | DSLR | 03/31 | ✔ |
 | <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [11779][11779] | 최소비용 구하기 2 | 04/01 | ✔ |
-| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [11780][11780] | 플로이드 2 |  |  |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [11780][11780] | 플로이드 2 | 04/02 | ✔ |
 
 ---
 
@@ -280,9 +281,9 @@
 
 | 난이도 | 번호 | 이름 | 날짜 | 체크 |
 |:---:|:---:|:---:|:---:| :---: |
- | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [11725][11725] | 트리의 부모 찾기 |  |  |
-| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [1167][1167] | 트리의 지름 |  |  |
-| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1967][1967] | 트리의 지름 |  |  |
+ | <img src="https://static.solved.ac/tier_small/9.svg" width="20px" height="25px"></img> | [11725][11725] | 트리의 부모 찾기 | 04/02 | ✔ |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [1167][1167] | 트리의 지름 | 04/03 | ✔ |
+| <img src="https://static.solved.ac/tier_small/12.svg" width="20px" height="25px"></img> | [1967][1967] | 트리의 지름 | 04/03 | ✔ |
 | <img src="https://static.solved.ac/tier_small/10.svg" width="20px" height="25px"></img> | [1991][1991] | 트리 순회 |  |  |
 | <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [2263][2263] | 트리의 순회 |  |  |
 | <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [5639][5639] | 이진 검색 트리 |  |  |
@@ -311,6 +312,17 @@
 | <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [1774][1774] | 우주신과의 교감 |  |  |
 | <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [2887][2887] | 행성 터널 |  |  |
 | <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [17472][17472] | 다리 만들기 2 |  |  |
+
+---
+
+### 트리에서의 동적 계획법
+
+| 난이도 | 번호 | 이름 | 날짜 | 체크 |
+|:---:|:---:|:---:|:---:| :---: |
+ | <img src="https://static.solved.ac/tier_small/11.svg" width="20px" height="25px"></img> | [15681][15681] | 트리와 쿼리 |  |  |
+| <img src="https://static.solved.ac/tier_small/15.svg" width="20px" height="25px"></img> | [2213][2213] | 트리의 독립집합 |  |  |
+| <img src="https://static.solved.ac/tier_small/13.svg" width="20px" height="25px"></img> | [2533][2533] | 사회망 서비스(SNS) |  |  |
+| <img src="https://static.solved.ac/tier_small/14.svg" width="20px" height="25px"></img> | [1949][1949] | 우수 마을 |  |  |
 <!-- ### -->
 
 </div>
@@ -478,3 +490,8 @@
 [1774]: https://www.acmicpc.net/problem/1774
 [2887]: https://www.acmicpc.net/problem/2887
 [17472]: https://www.acmicpc.net/problem/17472
+
+[15681]: https://www.acmicpc.net/problem/15681
+[2213]: https://www.acmicpc.net/problem/2213
+[2533]: https://www.acmicpc.net/problem/2533
+[1949]: https://www.acmicpc.net/problem/1949
