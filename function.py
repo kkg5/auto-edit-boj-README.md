@@ -15,9 +15,10 @@ async def build_str(self):
 
     self.content += f'| [{self.comboBox.currentText()}]' \
                     f'(#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
+    write(self)
 
 
-async def write(self):
+def write(self):
     with open('README1.md', 'r') as f:
         lines = f.readlines()
     with open('README2.md', 'w') as f:
