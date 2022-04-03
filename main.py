@@ -1,3 +1,4 @@
+import asyncio
 import requests
 from PySide6.QtWidgets import QApplication, QMainWindow
 from bs4 import BeautifulSoup
@@ -72,11 +73,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             cur_value += progress_value
             self.progressBar.setValue(cur_value)
 
-        function.build_str(self)
-        function.write(self)
+        asyncio.run(function.build_str(self))
+        asyncio.run(function.write(self))
 
     def examine(self):
-        function.examine(self)
+        asyncio.run(function.examine(self))
 
 
 driver = webdriver.Chrome(service=Service('./chromedriver'))
@@ -93,6 +94,7 @@ for i in range(START_INDEX, 50):
                                   f'> tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
 
 driver.close()
+
 
 app = QApplication()
 window = MainWindow()
