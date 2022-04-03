@@ -74,7 +74,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.progressBar.setValue(cur_value)
 
         asyncio.run(function.build_str(self))
-        asyncio.run(function.write(self))
 
     def examine(self):
         asyncio.run(function.examine(self))
