@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def build_str(self):
+async def build_str(self):
     self.text += '\n---\n\n### ' + self.comboBox.currentText() + '\n\n| 난이도 | 번호 | 이름 | 날짜 | 체크 ' \
                                                                  '|\n|:---:|:---:|:---:|:---:| :---: |\n '
     self.link += '\n'
@@ -17,7 +17,7 @@ def build_str(self):
                     f'(#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
 
 
-def write(self):
+async def write(self):
     with open('README1.md', 'r') as f:
         lines = f.readlines()
     with open('README2.md', 'w') as f:
@@ -36,7 +36,7 @@ def write(self):
     self.progressBar.setValue(100)
 
 
-def examine(self):
+async def examine(self):
     with open('README1.md', 'r') as f:
         lines = f.readlines()
 
