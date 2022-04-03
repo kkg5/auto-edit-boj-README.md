@@ -95,7 +95,6 @@ for i in range(START_INDEX, 50):
 
 driver.close()
 
-
 app = QApplication()
 window = MainWindow()
 window.show()
