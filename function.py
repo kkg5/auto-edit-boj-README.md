@@ -19,9 +19,9 @@ async def build_str(self):
 
 
 def write(self):
-    with open('README1.md', 'r') as f:
+    with open('README1.md', 'r', encoding='utf-8') as f:
         lines = f.readlines()
-    with open('README2.md', 'w') as f:
+    with open('README2.md', 'w', encoding='utf-8') as f:
         for line in lines:
             if line.rstrip() == '<!-- Contents -->':
                 f.write(self.content)
@@ -38,7 +38,7 @@ def write(self):
 
 
 async def examine(self):
-    with open('README1.md', 'r') as f:
+    with open('README1.md', 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     self.label_2.setText('examining..')
