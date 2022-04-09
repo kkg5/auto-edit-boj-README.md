@@ -2,5 +2,4 @@
 chromedriver
 chromedriver.exe
 *.pyc
-*.xml
-*.iml
+.idea/*
