@@ -1,5 +1,4 @@
 import asyncio
-import re
 import requests
 from PySide6.QtWidgets import QApplication, QMainWindow
 from bs4 import BeautifulSoup
@@ -67,7 +66,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             self.difficulty.append(soup.img.__getitem__(key='src'))
 
-            v = soup.select('div.ProblemTitleTag__ProblemTitle-sc-iphdox-1.kihrnS > a > span')
+            v = soup.select(
+                'div.ProblemTitleTag__ProblemTitle-sc-iphdox-1.kihrnS > a > span')
 
             self.name.append(v[0].getText())
 
