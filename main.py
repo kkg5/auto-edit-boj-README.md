@@ -41,8 +41,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         index = self.comboBox.currentIndex() + START_INDEX
 
-        driver = webdriver.Chrome(service=Service('./chromedriver'))
-        driver.set_window_rect(0, 0, 0, 0)
+        driver = webdriver.Chrome(service=Service(
+            './chromedriver'), options=options)
         driver.get('https://www.acmicpc.net/step')
         driver.find_element(By.CSS_SELECTOR, 'body > div.wrapper > div.container.content > div:nth-child(5) '
                                              '> div > div > table > tbody > '
@@ -66,7 +66,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             self.difficulty.append(soup.img.__getitem__(key='src'))
 
-            v = soup.select('div.ProblemTitleTag__ProblemTitle-sc-iphdox-1.kihrnS > a > span')
+            v = soup.select(
+                'div.ProblemTitleLink__ProblemTitleWrapper-sc-2ljb1q-0.zVQMx > div > a > span')
 
             self.name.append(v[0].getText())
 
@@ -79,18 +80,23 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         asyncio.run(function.examine(self))
 
 
-driver = webdriver.Chrome(service=Service('./chromedriver'))
-driver.set_window_rect(0, 0, 0, 0)
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+options.add_argument('--window-size=1024,768')
+options.add_argument('--disable-gpu')
+options.add_experimental_option("excludeSwitches", ["enable-logging"])
+driver = webdriver.Chrome(service=Service(
+    './chromedriver'), options=options)
 driver.get('https://www.acmicpc.net/step')
 
 el = []
 
-START_INDEX = 25
+START_INDEX = 1
 
 for i in range(START_INDEX, 50):
     el.append(driver.find_element(By.CSS_SELECTOR,
-                                  f'body > div.wrapper > div.container.content > div:nth-child(5) > div > div > table '
-                                  f'> tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
+                                  f'body > div.wrapper > div.container.content > div:nth-child(5) > '
+                                  f'div > div > table > tbody > tr:nth-child({i}) > td:nth-child(2) > a').text)
 
 driver.close()
 
