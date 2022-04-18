@@ -15,10 +15,10 @@ async def build_str(self):
 
     self.content += f'| [{self.comboBox.currentText()}]' \
                     f'(#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
-    write(self)
+    await write(self)
 
 
-def write(self):
+async def write(self):
     with open('README1.md', 'r', encoding='utf-8') as f:
         lines = f.readlines()
     with open('README2.md', 'w', encoding='utf-8') as f:
@@ -63,7 +63,8 @@ async def examine(self):
 
     dif2 = []
     for idx in range((len(num) - 1) // 50 + 1):
-        webpage = requests.get(f'https://solved.ac/search?query=id:{"|".join(num[0 + 50 * idx:50 + 50 * idx])}')
+        webpage = requests.get(
+            f'https://solved.ac/search?query=id:{"|".join(num[0 + 50 * idx:50 + 50 * idx])}')
         soup = BeautifulSoup(webpage.content, 'html.parser')
 
         for idx2 in range(2, 52):
@@ -73,7 +74,8 @@ async def examine(self):
             if not soup_li:
                 break
 
-            dif2.append(re.findall('[0-9]+', soup_li[0].__getitem__(key='src'))[0])
+            dif2.append(re.findall(
+                '[0-9]+', soup_li[0].__getitem__(key='src'))[0])
             cur_value += progress_value
             self.progressBar.setValue(cur_value)
 
