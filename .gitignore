@@ -1,5 +1,6 @@
 
 chromedriver
-chromedriver.exe
+*.exe
 *.pyc
-.idea/*
+*.spec
+build
