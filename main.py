@@ -15,14 +15,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
 
-        self.name = []
-        self.num = []
-        self.difficulty = []
-
-        self.text = ''
-        self.link = ''
-        self.content = ''
-
         self.progressBar.setVisible(False)
 
         self.setGeometry(800, 300, 300, 179)
@@ -34,6 +26,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.pushButton_2.clicked.connect(self.examine)
 
     def edit(self):
+
+        self.name = []
+        self.num = []
+        self.difficulty = []
+
+        self.text = ''
+        self.link = ''
+        self.content = ''
 
         self.label_2.setText('editing..')
         self.progressBar.setVisible(True)
