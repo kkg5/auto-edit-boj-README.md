@@ -13,6 +13,8 @@ async def build_str(self):
                      f'| [{self.num[a]}][{self.num[a]}] | {self.name[a]} |  |  |\n'
         self.link += f'[{self.num[a]}]: https://www.acmicpc.net/problem/{self.num[a]}\n'
 
+    self.text += '\n<div align=right>\n\n[TOP](#백준boj-)\n\n</div>\n'
+
     self.content += f'| [{self.comboBox.currentText()}]' \
                     f'(#{self.comboBox.currentText().replace(", ", "-").replace(" ", "-")}) |\n'
     await write(self)
