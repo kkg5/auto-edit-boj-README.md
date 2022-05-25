@@ -66,8 +66,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             self.difficulty.append(soup.img.__getitem__(key='src'))
 
-            v = soup.select(
-                'div.ProblemTitleLink__ProblemTitleWrapper-sc-2ljb1q-0.zVQMx > div > a > span')
+            v = soup.select('.__Latex__')
 
             self.name.append(v[0].getText())
 
