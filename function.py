@@ -69,15 +69,11 @@ async def examine(self):
             f'https://solved.ac/search?query=id:{"|".join(num[0 + 50 * idx:50 + 50 * idx])}')
         soup = BeautifulSoup(webpage.content, 'html.parser')
 
-        for idx2 in range(2, 52):
-            soup_li = soup.select('div.contents > div:nth-child(4) > div:nth-child(2) > div > '
-                                  'div.StickyTable__Wrapper-sc-45ty5n-3.cerLvn.sticky-table > div > '
-                                  f'div:nth-child({idx2}) > div:nth-child(1) > div > div > div > a > a > img')
-            if not soup_li:
-                break
+        soup_li = soup.select('.css-1vnxcg0')
+        for idx2 in range(len(soup_li)):
 
             dif2.append(re.findall(
-                '[0-9]+', soup_li[0].__getitem__(key='src'))[0])
+                '[0-9]+', soup_li[idx2].__getitem__(key='src'))[0])
             cur_value += progress_value
             self.progressBar.setValue(cur_value)
 
