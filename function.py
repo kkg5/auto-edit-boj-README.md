@@ -56,7 +56,7 @@ async def examine(self):
             nums = re.findall('[0-9]+', line)
             num.append(nums[3])
             dif[nums[3]] = nums[0]
-            name[nums[3]] = line.split(' | ')[-3]
+            name[nums[3]] = line.split(' | ')[2].strip()
 
     num.sort(key=lambda x: int(x))
 
